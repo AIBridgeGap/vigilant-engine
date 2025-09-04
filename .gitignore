@@ -11,3 +11,10 @@ build/
 # Archives & temp
 *.zip
 *.log
+
+# Large assets (temporarily excluded for initial push)
+Assets/*.png
+Assets/*.jpg
+Assets/*.jpeg
+BUILD_INSTRUCTIONS_SHEMA/v1.0/Phase*/Hero*/*.png
+BUILD_INSTRUCTIONS_SHEMA/v1.0/Phase*/Hero*/*.jpg
