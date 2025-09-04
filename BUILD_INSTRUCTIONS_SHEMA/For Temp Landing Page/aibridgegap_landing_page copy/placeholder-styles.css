@@ -1,0 +1,11 @@
+/* Add this to your CSS */
+.placeholder-image {
+    background-color: #e5e7eb;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    font-size: 16px;
+    border-radius: 12px;
+}

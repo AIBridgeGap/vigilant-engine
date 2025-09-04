@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIBridgeGap - Connecting AI to Your World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --secondary-color: #7C3AED;
+            --accent-color: #38BDF8;
+            --dark-bg: #111827;
+            --light-bg: #F9FAFB;
+            --text-dark: #1F2937;
+            --text-light: #F9FAFB;
+            --gradient-start: rgba(79, 70, 229, 0.8);
+            --gradient-end: rgba(124, 58, 237, 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: var(--text-dark);
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 160px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9ImNpcmN1aXQiIHg9IjAiIHk9IjAiIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxwYXRoIGQ9Ik0xMCAxMCBMMjAgMTAgTDIwIDIwIEwzMCAyMCBMMzAgMzAgTDQwIDMwIEw0MCA0MCIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMSkiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgLz4KICAgICAgPHBhdGggZD0iTTAgMCBMMTAgMTAgTTAgMTAgTDEwIDIwIE0xMCAwIEwyMCAxMCBNNDAgMCBMMzAgMTAgTTQwIDEwIEwzMCAyMCBNMzAgMCBMMjAgMTAiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2NpcmN1aXQpIiAvPgo8L3N2Zz4=');
+            opacity: 0.2;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .btn:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: white;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Placeholder image styling */
+        .placeholder-image {
+            background-color: #e5e7eb;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-size: 16px;
+            border-radius: 12px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #4B5563;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background-color: var(--light-bg);
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-size: 24px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .service-description {
+            color: #4B5563;
+            margin-bottom: 15px;
+        }
+
+        .service-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .service-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background-color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 60px;
+        }
+
+        .contact-info {
+            padding-right: 30px;
+        }
+
+        .contact-info p {
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #4B5563;
+        }
+
+        .contact-form {
+            background-color: var(--light-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .footer-description {
+            color: #9CA3AF;
+            margin-bottom: 20px;
+        }
+
+        .footer-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-link {
+            margin-bottom: 12px;
+        }
+
+        .footer-link a {
+            color: #9CA3AF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-link a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 30px;
+            text-align: center;
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+
+            .nav-menu {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-item {
+                margin: 0 15px 10px;
+            }
+
+            .hero {
+                padding: 140px 0 80px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .about-container {
+                flex-direction: column;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">AIBridgeGap</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services Coming Soon</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">Process Automation</a>
+                        <a href="#" class="dropdown-item">AI Prompt Engineering</a>
+                        <a href="#" class="dropdown-item">Internal AI Training</a>
+                        <a href="#" class="dropdown-item">App/Automation Development</a>
+                        <a href="#" class="dropdown-item">AI Infrastructure Strategy</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Connecting AI to Your World</h1>
+            <p>Bridging the gap between organizations and AI technology with practical solutions that transform operations and preserve human creativity.</p>
+            <div>
+                <a href="#contact" class="btn">Get in Touch</a>
+                <a href="#services" class="btn btn-outline">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <!-- Placeholder for the profile image -->
+                <div class="placeholder-image">
+                    <p>Your profile image will appear here.<br>Please upload the image file named "profile-image.jpg" to this directory.</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About AIBridgeGap</h2>
+                <p>AIBridgeGap was founded with a clear mission: to make AI accessible and immediately useful for organizations that might otherwise struggle with adoption.</p>
+                <p>Unlike technical consultants who overwhelm with jargon, we specialize in translating complex AI concepts into practical applications that deliver real value. Our approach focuses on bridging the knowledge gap between your team and emerging AI tools.</p>
+                <p>We work primarily with nonprofits, media stations, educational institutions, and community organizations, helping them optimize operations, reduce manual workflows, and effectively integrate AI tools into their daily processes.</p>
+                <p>Our expertise lies in creating systems that scale while preserving the human creativity and decision-making that makes your organization unique.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title">Our Services</h2>
+                <p>Comprehensive AI consulting and integration solutions tailored to your organization's needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Process Automation</h3>
+                        <p class="service-description">Streamline operations by automating repetitive tasks like parsing emails, tagging video archives, generating summaries, and improving communications.</p>
+                        <a href="#" class="service-link">Coming Soon →</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <div class="service-content">
+                        <h3 class="service-title">AI Prompt Engineering</h3>
+                        <p class="service-description">Optimize your interactions with AI tools like ChatGPT, Claude, or Perplexity through custom prompt engineering tailored to your workflows.</p>
+                        <a href="#" class="service-link">Coming Soon →</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Internal AI Training</h3>
+                        <p class="service-description">Empower your team with the skills to effectively use generative AI tools for text, image, and video creation in their daily work.</p>
+                        <a href="#" class="service-link">Coming Soon →</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <div class="service-content">
+                        <h3 class="service-title">App/Automation Development</h3>
+                        <p class="service-description">Create lightweight applications and automations using Google Workspace, App Scripts, and third-party AI tools to enhance productivity.</p>
+                        <a href="#" class="service-link">Coming Soon →</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <div class="service-content">
+                        <h3 class="service-title">AI Infrastructure Strategy</h3>
+                        <p class="service-description">Develop comprehensive strategies for building AI systems that scale effectively while preserving human creativity and oversight.</p>
+                        <a href="#" class="service-link">Coming Soon →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Ready to bridge the gap between your organization and AI technology? We're here to help you navigate the AI revolution with confidence and clarity.</p>
+                    <p>Fill out the form to discuss how AIBridgeGap can help optimize your operations, reduce manual workflows, and effectively integrate AI tools into your processes.</p>
+                    <p>We look forward to connecting with you and exploring how we can transform your organization through practical AI solutions.</p>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formsubmit.co/AIBridgeGap@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization" class="form-label">Organization</label>
+                            <input type="text" id="organization" name="organization" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <input type="hidden" name="_next" value="https://aibridgegap.com/thank-you">
+                        <input type="hidden" name="_subject" value="New inquiry from AIBridgeGap website">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <span class="footer-logo">AIBridgeGap</span>
+                    <p class="footer-description">Bridging the knowledge gap between organizations and AI technology.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Process Automation</a></li>
+                        <li class="footer-link"><a href="#">AI Prompt Engineering</a></li>
+                        <li class="footer-link"><a href="#">Internal AI Training</a></li>
+                        <li class="footer-link"><a href="#">App Development</a></li>
+                        <li class="footer-link"><a href="#">AI Strategy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#about">About</a></li>
+                        <li class="footer-link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Connect</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="mailto:AIBridgeGap@gmail.com">AIBridgeGap@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AIBridgeGap. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

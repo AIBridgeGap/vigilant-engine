@@ -1,0 +1,265 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/Phase 1/006_contact_page_content.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/Phase 1/AI Training Service Page Template.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/Phase 1/005_contact_page_instructions.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/Phase 1/003_services_page_instructions.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/Phase 1/004_services_page_content.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/Phase 1/002_home_page_content.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/Phase 1/001_home_page_instructions.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/logs/claude_hutch_deployment_log.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp_HUTCH/.clasp.json",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/.clasp.json",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp_HUTCH/RetrieveJDNew.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp_HUTCH/.gitignore",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rh240625@gmail.com/My Drive/ADMIN_Developer/LOGIC/REVISED_Bold_Placeholders_Mateo_Resume.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/.gitignore",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rh240625@gmail.com/My Drive/LOGIC/REVISED_Bold_Placeholders_Mateo_Resume.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp_HUTCH/ApiUtils.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ClaudeCLI_Prompts_Audits/cprompts_RRA_HUTCH/Claude CLI Prompt FINAL: Ultimate Debugging Solution for v.trim Error.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ClaudeCLI_Prompts_Audits/cprompts_RRA_HUTCH/backupCode/fetchAndExtractJobData_original.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp_HUTCH/Constants.gs",
+		"/Users/robertohernandez_macpro2020/.zshrc",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/START_HERE/Shared/alias_config/shared_core.sh",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/ADMIN/Google Calendar/_.ics_files/farm_40th_anniversary.ics",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/ADMIN/Google Calendar/_.ics_files/kids-in-the-park.ics",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ClaudeCLI_Prompts_Audits/cprompts_RRA_HUTCH/CpromptExtractionFix.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp_HUTCH/scripts/cloghutchpush.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp_HUTCH/scripts/claude_hutch_log.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/START_HERE/Shared/alias_config/shared_core.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox_BACKUP_2025-07-10_20-36-28/mirrorSelectedSheets.gs",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/Website/NEW BUILD INSTRUCTIONS/AIBridgeGap.com Website Build Order Prioritization.md",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/ResumeRocketApp/scripts/claude_rr_log_enhanced.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/logs/claude_rr_session_log.txt",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp/scripts/claude_log_enhanced.sh",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/CAREER _ PROFESSIONAL/!RESUME & COVER LETTER/AUTOMATION_ResumeCreator/HERNANDEZ_REDO/JOB_HUNT_STRATEGY_summer2025/Companies Hiring for Non‑CS, AI‑Friendly Roles/CompaniesHiring_CareerPath.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp/shared_core.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp/.clasp.json",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/AI Demos/Airtable/Complete Airtable Field Mapping for Universal AI Consultation Form.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBridgeGap.com/AI Demos/Airtable/Universal AI Consultation Airtable Form Design.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/.shortcut-targets-by-id/0BzEb3VAB3X6OMUd0RjR2bTVQZGs/Bacano Design: Web Design Dev Clients/PJB BUILDERS LLC [Fort Collins]/Initial_meet_July022025/FINAL_handouts/AI Session Topics.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/.shortcut-targets-by-id/0BzEb3VAB3X6OMUd0RjR2bTVQZGs/Bacano Design: Web Design Dev Clients/PJB BUILDERS LLC [Fort Collins]/Initial_meet_July022025/FINAL_handouts/Revised Airtable Chat Test Prompts.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/.shortcut-targets-by-id/0BzEb3VAB3X6OMUd0RjR2bTVQZGs/Bacano Design: Web Design Dev Clients/PJB BUILDERS LLC [Fort Collins]/Initial_meet_July022025/FINAL_handouts/Airtable Form Suggestions for PJ's AI Session Preparation.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/.shortcut-targets-by-id/0BzEb3VAB3X6OMUd0RjR2bTVQZGs/Bacano Design: Web Design Dev Clients/PJB BUILDERS LLC [Fort Collins]/Initial_meet_July022025/🎨 Bacano Design LLC – Custom Development & Automation Services.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/.shortcut-targets-by-id/0BzEb3VAB3X6OMUd0RjR2bTVQZGs/Bacano Design: Web Design Dev Clients/PJB BUILDERS LLC [Fort Collins]/Initial_meet_July022025/code_Bacano Design LLC – Custom Development & Automation Services.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/logs/claude_session_log.txt",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/.shortcut-targets-by-id/0BzEb3VAB3X6OMUd0RjR2bTVQZGs/Bacano Design: Web Design Dev Clients/PJB BUILDERS LLC [Fort Collins]/Initial_meet_July022025/bacano_design_proxima_nova.html",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/TECH_STUFF/AI - Brave New World/Retrieval_Augmented_Generation_RAG/Multi-Tool Orchestration with RAG approach using OpenAI's Responses API.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/CAREER _ PROFESSIONAL/!RESUME & COVER LETTER/AUTOMATION_ResumeCreator/HERNANDEZ_REDO/JOB_HUNT_STRATEGY_june2025/recent_Fort Collins Area Job Opportunities - Verified June 2025.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/START_HERE/Shared/alias_config/mbp.sh",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/FAMILIA/de Los Cuchos/Download “AgingInDignity_Instructions.md”",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/claude-code/.devcontainer/devcontainer.json",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/claude-code/.devcontainer/.devcontainer.json",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/CAREER _ PROFESSIONAL/!RESUME & COVER LETTER/AUTOMATION_ResumeCreator/Scripts/myResumeRocketApp(best_versions)/My_ResumeRocket_App_Backup_2025-06-30_21-32-05_Notes.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/CAREER _ PROFESSIONAL/!RESUME & COVER LETTER/AUTOMATION_ResumeCreator/Scripts/myResumeRocketApp(best_versions)/My_ResumeRocket_App_Backup_2025-06-29_21-01-04_Notes.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp/RetrieveJDNew.gs",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/ENTREPRENEUR/ResumeRocket_business/Resume_Research/Where to Find Free Verified Resumes Online/VERIFIED SOURCES: 10,000+ Resume Downloads.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/ENTREPRENEUR/ResumeRocket_business/Resume_Research/Complete Guide to Free Resume Datasets and Collections.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/CAREER _ PROFESSIONAL/!RESUME & COVER LETTER/AUTOMATION_ResumeCreator/HERNANDEZ_REDO/JOB_HUNT_STRATEGY_june2025/JOB SEARCH COUNCILS/Job Search Councils_ Analysis and Recommendations.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/START_HERE/Shared/zsh_aliases_resume.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp/ApiUtils.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/ResumeRocketApp/.clas",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/CAREER _ PROFESSIONAL/!RESUME & COVER LETTER/AUTOMATION_ResumeCreator/HUTCHERSON/Templates/ResumeRocket_Template_Sheet_Overview.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ClaudeCLI_prompts_logs/resumerocket_debug_cprompt.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ClaudeCLI_prompts_logs/cprompt_mateo_resume_fix.md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude_Sandbox/ResumeRocket/claude_log.sh",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/TECH_STUFF/YouTube/Download README_Transcript_Workflow.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/TECH_STUFF/YouTube/YouTube Transcript Generator/My 17 Minute AI Workflow To Stand Out At Work/🧰 Recommended Software (in order of use).md",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/RetrieveJDNew.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/.gitignore",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/START_HERE/Shared/alias_config/shared_core.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/claude_log.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/.gitignore",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/UserConfigManager.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/Constants.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/appsscript.json",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/.clasp.json",
+		"/Users/robertohernandez_macpro2020/Desktop/CODE PROJECTS BACKUP_MASTER/ResumeRocket_Claude/Constants.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/CODE PROJECTS BACKUP_MASTER/ResumeRocket_Claude/appsscript.json",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/.claspignore",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/RetrieveJDNew.js",
+		"/Users/robertohernandez_macpro2020/Desktop/Claude Sandbox/ResumeRocket/ResumeRocketApp/REFACTORING_SUMMARY.md",
+		"/Users/robertohernandez_macpro2020/Library/CloudStorage/GoogleDrive-rohernan@gmail.com/My Drive/MY_REAL_DRIVE/CAREER _ PROFESSIONAL/!RESUME & COVER LETTER/AUTOMATION_ResumeCreator/HERNANDEZ_REDO/JOB_HUNT_STRATEGY_june2025/expanded_verified_fort_collins_job_opportunities.md",
+		"/Users/robertohernandez_macpro2020/Downloads/freshly_verified_job_opportunities.md",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/START_HERE/Shared/alias_config/mbp.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/ResumeRocketApp/RetrieveJDNew.js",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/ResumeRocketApp/START_HERE/Shared/alias_config/shared_core.sh",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/.gitignore",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/ResumeRocketApp/RetrieveJDNew.gs",
+		"/Users/robertohernandez_macpro2020/Downloads/RetrieveJDNew_backup.gs",
+		"/Users/robertohernandez_macpro2020/Desktop/ResumeRocket/ResumeRocketApp/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git",
+				"Package Control.sublime-settings"
+			],
+			[
+				"p",
+				"Package Control.sublime-settings"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
