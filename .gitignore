@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+# Node/Next (if you add a build later)
+node_modules/
+.next/
+out/
+dist/
+build/
+.env
+.env.*
+# Archives & temp
+*.zip
+*.log
