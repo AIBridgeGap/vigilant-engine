@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Demos | AIBridgeGap - See AI Solutions in Action</title>
+    <meta name="description" content="Explore interactive AI automation demos and see real examples of how AIBridgeGap transforms business processes with practical AI solutions.">
+    <meta name="keywords" content="AI demos, automation examples, AI in action, business process automation, AI workflow demonstrations">
+    <link rel="canonical" href="https://aibridgegap.com/demos">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html" class="brand-link">
+                        <span class="brand-text">AIBridgeGap</span>
+                    </a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="demos.html" class="nav-link active">Demos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link contact-btn">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content centered">
+                    <h1 class="hero-title">See AI Solutions in Action</h1>
+                    <p class="hero-subtitle">
+                        Explore real examples of how we transform business processes with practical AI automation. Each demo shows actual results from client implementations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-categories">
+            <div class="container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">All Demos</button>
+                    <button class="filter-btn" data-filter="automation">Process Automation</button>
+                    <button class="filter-btn" data-filter="customer-service">Customer Service</button>
+                    <button class="filter-btn" data-filter="data-processing">Data Processing</button>
+                    <button class="filter-btn" data-filter="marketing">Marketing</button>
+                    <button class="filter-btn" data-filter="operations">Operations</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="demos-grid-section">
+            <div class="container">
+                <div class="demos-grid">
+                    <!-- Customer Service Automation Demo -->
+                    <div class="demo-card" data-category="customer-service automation">
+                        <div class="demo-header">
+                            <div class="demo-tag">Customer Service</div>
+                            <h3 class="demo-title">Automated Customer Support Ticket Routing</h3>
+                        </div>
+                        <div class="demo-preview">
+                            <img src="images/demo-customer-support.jpg" alt="Customer support automation demo" loading="lazy">
+                            <div class="demo-overlay">
+                                <button class="demo-play-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                                    </svg>
+                                    Try Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <p class="demo-description">
+                                Watch how AI automatically categorizes, prioritizes, and routes customer support tickets to the right team members, reducing response time by 75%.
+                            </p>
+                            <div class="demo-stats">
+                                <div class="stat">
+                                    <span class="stat-value">75%</span>
+                                    <span class="stat-label">Faster Response</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">95%</span>
+                                    <span class="stat-label">Accuracy Rate</span>
+                                </div>
+                            </div>
+                            <button class="demo-btn" onclick="openDemo('customer-support')">Launch Interactive Demo</button>
+                        </div>
+                    </div>
+
+                    <!-- Invoice Processing Demo -->
+                    <div class="demo-card" data-category="data-processing automation">
+                        <div class="demo-header">
+                            <div class="demo-tag">Data Processing</div>
+                            <h3 class="demo-title">Intelligent Invoice Processing</h3>
+                        </div>
+                        <div class="demo-preview">
+                            <img src="images/demo-invoice-processing.jpg" alt="Invoice processing automation" loading="lazy">
+                            <div class="demo-overlay">
+                                <button class="demo-play-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                                    </svg>
+                                    Try Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <p class="demo-description">
+                                See how AI extracts data from invoices, validates information, and automatically enters it into your accounting system with 99% accuracy.
+                            </p>
+                            <div class="demo-stats">
+                                <div class="stat">
+                                    <span class="stat-value">90%</span>
+                                    <span class="stat-label">Time Saved</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">99%</span>
+                                    <span class="stat-label">Data Accuracy</span>
+                                </div>
+                            </div>
+                            <button class="demo-btn" onclick="openDemo('invoice-processing')">Launch Interactive Demo</button>
+                        </div>
+                    </div>
+
+                    <!-- Lead Qualification Demo -->
+                    <div class="demo-card" data-category="marketing automation">
+                        <div class="demo-header">
+                            <div class="demo-tag">Marketing</div>
+                            <h3 class="demo-title">Automated Lead Qualification</h3>
+                        </div>
+                        <div class="demo-preview">
+                            <img src="images/demo-lead-qualification.jpg" alt="Lead qualification automation" loading="lazy">
+                            <div class="demo-overlay">
+                                <button class="demo-play-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                                    </svg>
+                                    Try Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <p class="demo-description">
+                                Experience how AI analyzes incoming leads, scores them based on your criteria, and automatically assigns them to the right sales team members.
+                            </p>
+                            <div class="demo-stats">
+                                <div class="stat">
+                                    <span class="stat-value">60%</span>
+                                    <span class="stat-label">Better Conversion</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">80%</span>
+                                    <span class="stat-label">Time Saved</span>
+                                </div>
+                            </div>
+                            <button class="demo-btn" onclick="openDemo('lead-qualification')">Launch Interactive Demo</button>
+                        </div>
+                    </div>
+
+                    <!-- Report Generation Demo -->
+                    <div class="demo-card" data-category="operations data-processing">
+                        <div class="demo-header">
+                            <div class="demo-tag">Operations</div>
+                            <h3 class="demo-title">Automated Report Generation</h3>
+                        </div>
+                        <div class="demo-preview">
+                            <img src="images/demo-report-generation.jpg" alt="Report generation automation" loading="lazy">
+                            <div class="demo-overlay">
+                                <button class="demo-play-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                                    </svg>
+                                    Try Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <p class="demo-description">
+                                Watch AI gather data from multiple sources, analyze trends, and generate comprehensive business reports automatically on schedule.
+                            </p>
+                            <div class="demo-stats">
+                                <div class="stat">
+                                    <span class="stat-value">95%</span>
+                                    <span class="stat-label">Time Reduction</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">24/7</span>
+                                    <span class="stat-label">Availability</span>
+                                </div>
+                            </div>
+                            <button class="demo-btn" onclick="openDemo('report-generation')">Launch Interactive Demo</button>
+                        </div>
+                    </div>
+
+                    <!-- Email Marketing Automation -->
+                    <div class="demo-card" data-category="marketing automation">
+                        <div class="demo-header">
+                            <div class="demo-tag">Marketing</div>
+                            <h3 class="demo-title">Smart Email Campaign Optimization</h3>
+                        </div>
+                        <div class="demo-preview">
+                            <img src="images/demo-email-marketing.jpg" alt="Email marketing automation" loading="lazy">
+                            <div class="demo-overlay">
+                                <button class="demo-play-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                                    </svg>
+                                    Try Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <p class="demo-description">
+                                See how AI personalizes email content, optimizes send times, and automatically adjusts campaigns based on recipient behavior and engagement.
+                            </p>
+                            <div class="demo-stats">
+                                <div class="stat">
+                                    <span class="stat-value">45%</span>
+                                    <span class="stat-label">Higher Open Rate</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">65%</span>
+                                    <span class="stat-label">Better CTR</span>
+                                </div>
+                            </div>
+                            <button class="demo-btn" onclick="openDemo('email-marketing')">Launch Interactive Demo</button>
+                        </div>
+                    </div>
+
+                    <!-- Inventory Management -->
+                    <div class="demo-card" data-category="operations automation">
+                        <div class="demo-header">
+                            <div class="demo-tag">Operations</div>
+                            <h3 class="demo-title">Predictive Inventory Management</h3>
+                        </div>
+                        <div class="demo-preview">
+                            <img src="images/demo-inventory.jpg" alt="Inventory management automation" loading="lazy">
+                            <div class="demo-overlay">
+                                <button class="demo-play-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                                    </svg>
+                                    Try Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="demo-content">
+                            <p class="demo-description">
+                                Experience AI-powered demand forecasting that automatically manages inventory levels, predicts shortages, and optimizes reorder timing.
+                            </p>
+                            <div class="demo-stats">
+                                <div class="stat">
+                                    <span class="stat-value">30%</span>
+                                    <span class="stat-label">Cost Reduction</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">98%</span>
+                                    <span class="stat-label">Stock Accuracy</span>
+                                </div>
+                            </div>
+                            <button class="demo-btn" onclick="openDemo('inventory-management')">Launch Interactive Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Modal -->
+        <div id="demo-modal" class="demo-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Interactive Demo</h3>
+                    <button class="modal-close" onclick="closeDemo()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="demo-container">
+                        <!-- Demo content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="case-study-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Real Client Success Stories</h2>
+                    <p class="section-subtitle">See the actual results our clients achieved with these AI implementations</p>
+                </div>
+                
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="company-logo">TechFlow Solutions</div>
+                            <div class="industry-tag">Professional Services</div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Automated Customer Onboarding</h3>
+                            <p>Reduced onboarding time from 5 days to 30 minutes using intelligent document processing and automated workflow triggers.</p>
+                            <div class="case-study-results">
+                                <div class="result">
+                                    <span class="result-value">92%</span>
+                                    <span class="result-label">Time Saved</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result-value">$50K</span>
+                                    <span class="result-label">Annual Savings</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="company-logo">GrowthMark Agency</div>
+                            <div class="industry-tag">Marketing</div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>AI-Powered Content Creation</h3>
+                            <p>Implemented AI content generation and optimization system that produces personalized marketing materials at scale.</p>
+                            <div class="case-study-results">
+                                <div class="result">
+                                    <span class="result-value">300%</span>
+                                    <span class="result-label">Output Increase</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result-value">85%</span>
+                                    <span class="result-label">Cost Reduction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="company-logo">Precision Logistics</div>
+                            <div class="industry-tag">Logistics</div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Smart Route Optimization</h3>
+                            <p>Deployed AI system that optimizes delivery routes in real-time based on traffic, weather, and customer preferences.</p>
+                            <div class="case-study-results">
+                                <div class="result">
+                                    <span class="result-value">25%</span>
+                                    <span class="result-label">Fuel Savings</span>
+                                </div>
+                                <div class="result">
+                                    <span class="result-value">40%</span>
+                                    <span class="result-label">Faster Delivery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-studies-cta">
+                    <a href="case-studies.html" class="btn-secondary">View All Case Studies</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to See These Solutions in Your Business?</h2>
+                    <p class="cta-subtitle">
+                        Schedule a personalized demo where we'll show you exactly how these AI solutions can be implemented in your specific business context.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn-primary large">Request Personal Demo</a>
+                        <a href="services.html" class="btn-secondary large">Explore Services</a>
+                    </div>
+                    <div class="demo-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🎯</span>
+                            <span>Customized to your industry</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💡</span>
+                            <span>Live Q&A with our experts</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📊</span>
+                            <span>ROI calculations included</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>AIBridgeGap</h3>
+                        <p>Bridging the gap between AI technology and business success.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#automation">Process Automation</a></li>
+                        <li><a href="services.html#training">AI Training</a></li>
+                        <li><a href="services.html#custom">Custom Solutions</a></li>
+                        <li><a href="services.html#consulting">AI Strategy Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="demos.html">AI Demos</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="contact.html">Get Started</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p>Email: hello@aibridgegap.com</p>
+                        <p>Phone: (555) 123-4567</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                            <a href="#" aria-label="Twitter">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AIBridgeGap. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="demo-scripts.js"></script>
+</body>
+</html>
