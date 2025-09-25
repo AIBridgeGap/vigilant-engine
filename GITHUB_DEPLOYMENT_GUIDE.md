@@ -97,10 +97,9 @@ git push origin main
 
 ---
 
-## 🔄 Complete Update Workflow (Copy & Paste)
+## 🔄 Complete Update Workflow Options
 
-Here's the complete sequence you can copy and paste:
-
+### **Option 1: Manual Workflow (Original)**
 ```bash
 # Navigate to website directory
 cd "/Users/robertohernandez-macmini-m1/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBRIDGEGAP.com/WEBSITE/Website_build"
@@ -116,6 +115,23 @@ git commit -m "Update website: [describe your changes here]"
 
 # Push to GitHub
 git push origin main
+
+# 🚨 REMEMBER: Manually upload changed files to cPanel!
+```
+
+### **Option 2: Automated Reminder Script (Recommended)**
+```bash
+# Navigate to website directory
+cd "/Users/robertohernandez-macmini-m1/Library/CloudStorage/GoogleDrive-aibridgegap@gmail.com/My Drive/AIBRIDGEGAP.com/WEBSITE/Website_build"
+
+# Use the automated reminder script
+./deploy-with-reminder.sh "Update website: [describe your changes here]"
+
+# This will:
+# ✅ Push to GitHub
+# ✅ Show macOS notification reminder
+# ✅ List files that need cPanel upload
+# ✅ Display cPanel URL
 ```
 
 ---
